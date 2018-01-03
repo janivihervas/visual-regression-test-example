@@ -1,0 +1,26 @@
+{
+  "name": "visual-regression-test-example",
+  "version": "0.0.1",
+  "description": "Example for visual regression test using BackstopJS and CircleCI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janivihervas/visual-regression-test-example.git"
+  },
+  "keywords": [
+    "visual",
+    "regression",
+    "test",
+    "backstopjs",
+    "circleci"
+  ],
+  "author": "Jani Viherväs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janivihervas/visual-regression-test-example/issues"
+  },
+  "homepage": "https://github.com/janivihervas/visual-regression-test-example#readme"
+}
