@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/janivihervas/visual-regression-test-example#readme",
   "scripts": {
-    "start": "http-server dist -p 8080"
+    "start": "http-server dist -p 8080",
+    "test": "backstop reference"
   },
   "devDependencies": {
     "backstopjs": "3.0.36",
