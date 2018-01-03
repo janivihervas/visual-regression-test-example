@@ -5,7 +5,7 @@ machine:
 jobs:
   test:
     docker:
-      - image: circleci/node:8.9.1
+      - image: circleci/node:8.9.1-browsers
     steps:
       - checkout
       - restore_cache:
