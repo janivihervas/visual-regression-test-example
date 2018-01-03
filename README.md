@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/janivihervas/visual-regression-test-example.svg?style=svg)](https://circleci.com/gh/janivihervas/visual-regression-test-example)
 
-Example for visual regression test using [BackstopJS](https://github.com/garris/BackstopJS) and [CircleCI](https://circleci.com/). CircleCI commits changed screenshots automatically for branches other than `master`.
+Example for visual regression test using [BackstopJS](https://github.com/garris/BackstopJS) and [CircleCI](https://circleci.com/). CircleCI commits changed screenshots automatically for branches other than `master`. Check [PR #3](https://github.com/janivihervas/visual-regression-test-example/pull/3) to see it in action.
 
 ## CircleCI environment variables
 
