@@ -23,6 +23,22 @@ jobs:
           command: npm start
           background: true
       - run:
+          name: Waiting for server to start
+          command: |
+            for i in {1..10}
+            do
+              if $(nc -z localhost 8080)
+              then
+                echo "Server is running"
+                break
+              else
+                echo "Server is not running"
+                sleep 1s
+              fi
+            done
+
+            nc -vz localhost 8080
+      - run:
           name: Update screenshots
           command: npm test
       - run:
