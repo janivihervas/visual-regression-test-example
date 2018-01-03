@@ -2,14 +2,9 @@
   "id": "app",
   "viewports": [
     {
-      "label": "phone-small",
+      "label": "phone",
       "width": 320,
       "height": 480
-    },
-    {
-      "label": "phone-big",
-      "width": 360,
-      "height": 640
     },
     {
       "label": "tablet",
@@ -20,30 +15,15 @@
       "label": "laptop",
       "width": 1440,
       "height": 900
-    },
-    {
-      "label": "desktop",
-      "width": 1920,
-      "height": 1080
     }
   ],
   "scenarios": [
     {
       "label": "Index page: list",
-      "url": "http://localhost:8080",
-      "delay": 0,
+      "url": "http://localhost:8080/",
+      "delay": 50,
       "selectors": [
-        "ul"
-      ],
-      "selectorExpansion": true,
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "Index page: items",
-      "url": "http://localhost:8080",
-      "delay": 0,
-      "selectors": [
+        "ul",
         ".wrapper",
         ".item"
       ],
@@ -61,11 +41,6 @@
   },
   "report": ["ci"],
   "engine": "chrome",
-  "engineFlags": [
-    "--headless",
-    "--disable-gpu",
-    "--no-sandbox"
-  ],
   "asyncCaptureLimit": 10,
   "asyncCompareLimit": 50,
   "debug": false,
